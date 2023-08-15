@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica;
+  font-weight: bold;
+}
+
+header {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: white;
+}
+.header-logo {
+  width: 35px;
+  height: 32px;
+  padding: 3px;
+}
+header nav img#headerLogo:hover {
+  background-color: #E9E9E9;
+  border-radius: 150px;
+}
+#notifications {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+#message {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+#profile-img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+#navbar-pinterest {
+  color:black;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration:none;
+}
+
+#navbar-pinterest a{
+  text-decoration: none;
+}
+#inicio{
+  background-color: #111111;
+  color: white;
+  border-radius: 25px;
+  padding: 14px 12px 14px;
+
+}
+#explora{
+  background-color: #111111;
+  color: white;
+  border-radius: 25px;
+  padding: 14px 12px 14px;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  height: 70%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header-center-section {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+}
+
+#header-right-section {
+  height: 70%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  
+}
+#header-lupa{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+}
+.finder {
+  
+  /*display: flex;
+  align-items: center;
+ width: 80%;
+  height: 100%;
+  border-radius: 25px;
+  padding-left: 25px;
+  flex-grow: 1;
+*/
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  align-items: center;
+  background-color: inherit;
+  padding: 0px 8px 0px 0px;
+  font-size: 16px;
+  flex-grow: 1;
+
+
+}
+
+.finder input:hover + .material-symbols-outlined {
+  display: none;
+}
+#content{
+  border: none;
+  background-color: inherit;
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  padding: 35px;
+  gap: 15px;
+}
+
+.card{
+  width: 280px;
+  height: 360px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  padding: 35px;
+  gap: 15px;
+}
+
+.galery1 {
+  border-radius: 25px;
+  object-fit: cover;
+}
+.galery2 {
+  border-radius: 25px;
+  object-fit: cover;
+  height: 385px;
+}
+
+/* Cards */
+
+.contenido {
+  position: absolute;
+  margin-top: 80px;
+  padding-right: 5px;
+}
+
+.imagenes {
+
+
+  columns: 5 240px;
+  margin: auto;
+
+}
+
+.imagenes .card-image {
+  position: relative;
+  padding: 6px;
+}
+
+.imagenes .card-image img {
+  border-radius: 8%;
+  min-width: 240px;
+  max-width: 240px;
+}
+
+
+.card-image:hover > :first-child {
+  filter: brightness(60%);
+}
+
+.card-image:hover > * {
+  visibility: visible;
+  display: inline;
+}
+
+.button {
+  position: absolute;
+  left: 60%;
+  top: 5%; 
+  background-color: #e60023;  
+  padding: 13px 15px; 
+  border-radius: 30px;
+  border: none;
+  visibility: hidden;
+  display: none;
+}
+
+.imagenes .card-image button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", ;
+}
+
+.oculto-1 {
+  position: absolute;
+  left: 60%;
+  bottom: 8%;
+  background-color: #F0F0F0;
+  font-size: 30px;
+  border-radius: 50px;
+  color: #111111;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px;
+  visibility: hidden;
+  display: none;
+}
+
+.oculto-2 {
+  position: absolute;
+  left: 78%;
+  bottom: 8%;
+  background-color: #F0F0F0;
+  font-size: 30px;
+  border-radius: 50px;
+  color: #111111;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px;
+  visibility: hidden;
+  display: none;
+}
+
+#question{ 
+  position: fixed;
+  background-color: #F0F0F0;
+  top: 88%;
+  left: 94%;
+  padding: 14px;
+  font-weight: bolder;
+  border-radius: 40px;
+  color: #111111;
+}
