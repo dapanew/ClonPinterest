@@ -35,6 +35,7 @@ header nav img#headerLogo:hover {
   height: 35px;
   margin-right: 10px;
 }
+
 #message {
   width: 35px;
   height: 35px;
@@ -46,13 +47,13 @@ header nav img#headerLogo:hover {
   margin-right: 10px;
 }
 
+
 #navbar-pinterest {
   color:black;
   padding: 12px;
   border-radius: 25px;
   text-decoration:none;
 }
-
 #navbar-pinterest a{
   text-decoration: none;
 }
@@ -89,7 +90,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: cornflowerblue;
+  background-color: #E1E1E1;
+  border-radius: 20px;
 }
 
 #header-right-section {
@@ -127,10 +129,6 @@ nav {
 
 
 }
-
-.finder input:hover + .material-symbols-outlined {
-  display: none;
-}
 #content{
   border: none;
   background-color: inherit;
@@ -140,7 +138,18 @@ nav {
   padding: 35px;
   gap: 15px;
 }
-
+.barra input:hover + .material-symbols-outlined {
+  display: none;
+}
+.right-items span {
+  padding: 8px;
+  color: #767676;
+  font-size: 28px;
+}
+.right-items span:hover {
+  background-color: #E9E9E9;
+  border-radius: 150px;
+}
 .card{
   width: 280px;
   height: 360px;
